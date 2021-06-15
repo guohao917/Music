@@ -1,0 +1,29 @@
+<!--pages/playMusic/index.wxml-->
+<view class="playMusic">
+  <view class="playMusic-content">
+    <image class="playMusic-image" src="{{image}}">
+      
+    </image>
+  </view>
+  <view>  
+    <audio src="{{musicUrl}}" id="myAudio" />
+  </view>
+  <block wx:for="{{commonList}}" wx:key="index">
+    <view class="playMusic-comment">
+      <ul class="playMusic-comment-ul">
+        <li class="playMusic-comment-li">
+          <image class="playmusic-title" src="{{item.user.avatarUrl}}">
+          </image>
+        <view class="playmusic-wrapper">
+          <span class="playmusic-name">
+            <i>{{item.user.nickname}}</i>
+            <i class="playmusic-time">{{commentTimeList}}</i>
+          </span>
+          <span class="playmusic-like">{{item.likedCount}}</span>
+        </view>
+        <span class="playmusic-content">{{item.content}}</span>
+        </li>
+      </ul>
+    </view>
+  </block>
+</view>

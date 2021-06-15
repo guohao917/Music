@@ -1,0 +1,26 @@
+/**index.wxss**/
+
+.handleSearch {
+  margin: 20rpx;
+}
+
+.home-content {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: #e9e5e5;
+}
+
+.icon-small {
+  display: inline-block;
+}
+
+.home-content-input {
+  margin-left: 10rpx;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}

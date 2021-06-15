@@ -1,0 +1,18 @@
+<!--components/leader-board/leaderBoard.wxml-->
+<view class="board">
+  <block wx:for="{{boardList}}" wx:key="name">
+    <view class="board-content">
+      <image class="board-img" src="{{item.coverImgUrl}}">
+        <span class="board-span">{{item.updateFrequency}}</span>
+      </image>
+      <ul class="board-ul">
+        <li class="board-li" 
+          wx:for="{{item.tracks}}"
+          wx:key="index">
+          <span>{{index +1 + '.'}}</span>
+          <span class="board-li-span">{{item.first}}</span>-
+          <span>{{item.second}}</span></li>
+      </ul>
+    </view>
+  </block>
+</view>

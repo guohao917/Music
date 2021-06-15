@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-cpn" : "/components/home-content/content",
+    "search": "/components/home-search/search",
+    "board": "/components/leader-board/leaderBoard"
+  }
+}

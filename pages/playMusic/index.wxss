@@ -1,0 +1,69 @@
+/* pages/playMusic/index.wxss */
+
+.playMusic {
+  width: 100%;
+  height: 100%;
+  padding: 250rpx 0 0 100rpx;
+  background-color: #0b0c12;
+}
+
+.playMusic-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520rpx;
+  height: 520rpx;
+  border: 16rpx solid #606061;
+  border-radius: 50%;
+  background-color: #0a0a0a;
+}
+
+.playMusic-image {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+}
+
+.playMusic-comment {
+  margin-left: -70rpx;
+  padding: 20rpx;
+  width: 660rpx;
+}
+
+.playMusic-comment-li {
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.playmusic-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -90rpx;
+}
+
+.playmusic-title {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%; 
+}
+
+.playmusic-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  color:rgb(161, 170, 170);
+}
+
+.playmusic-time {
+  font-size: 24rpx;
+}
+
+.playmusic-like {
+  margin-right: -100rpx;
+}
+
+.playmusic-content{
+  display: block;
+  margin-top: 20rpx;
+  margin-left: 114rpx;
+}

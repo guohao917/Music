@@ -1,0 +1,30 @@
+<!--pages/search/index.wxml-->
+<view class="search">
+  <search bindhotList="hotList" bindhasRecordList="hasList" />
+  <block wx:if="{{!cloneRecordList.length}}">    
+    <view class="history-record" 
+      wx:if="{{!recordList.length == 0}}" 
+      wx:key="index">
+      <view>历史记录</view>
+      <ul class="search-record-list">
+        <li class="search-record-li" 
+          wx:for="{{recordList}}"
+          wx:key="index">{{item}}</li>
+      </ul>
+    </view>
+    <view class="search-title">热搜榜
+      <ul class="hot-ul">
+        <li class="hot-li" 
+          wx:for="{{hotSearchList}}" 
+          wx:key="index">
+          <span>{{index + 1 + '.'}}</span>
+          <span>{{item.first}}</span></li>
+      </ul>
+    </view>
+  </block>
+  <searchList 
+    musicList="{{addMusicList}}" 
+    searchInputList="{{searchInputList}}"
+    bindupLoading="upLoading"
+    wx:else/>
+</view>

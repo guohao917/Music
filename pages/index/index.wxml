@@ -1,0 +1,12 @@
+<view>
+  <search bindtap="handleSearch"/>
+  <swiper indicator-dots autoplay interval="2000" circular>
+    <block wx:for="{{sweiperList}}" wx:key="index">
+      <swiper-item>
+        <image  wx:if="{{item.url}}" class="swiper-image" src="{{item.url}}" mode="scaleToFill">
+      </image>
+    </swiper-item>
+    </block>
+  </swiper>
+  <board />
+</view>

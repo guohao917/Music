@@ -1,0 +1,22 @@
+<!--components/search-list/index.wxml-->
+<view class="searchlist">
+<block wx:for="{{musicList}}" wx:key="index">
+  <view class="searchlist-content" 
+    data-index="{{index}}" 
+    data-id="{{item.id}}"
+    data-image="{{item.al.picUrl}}"
+    data-index="{{index}}"
+    bindtap="hanldePlayVedio">
+    <ul class="searchlist-content-ul">
+      <li class="searchlist-content-li">
+      <view class="searchlist-content-span">
+        <span>{{item.name}}</span>
+          <span>
+            <i>{{item.ar[0].name}}</i>-<i>{{item.al.name}}</i>
+          </span>
+      </view>
+      </li>
+    </ul>
+  </view>  
+</block>
+</view>

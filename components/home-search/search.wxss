@@ -1,0 +1,26 @@
+/* components/home-search/search.wxss *//**index.wxss**/
+
+.home-wrapper {
+  margin: 20rpx;
+}
+
+.home-content {
+  height: 60rpx;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 20rpx;
+  background-color: #e9e5e5;
+}
+
+.icon-small {
+  display: inline-block;
+}
+
+.icon-small, .home-content-input {
+  margin-left: 10rpx;
+}
+
+.home-content-input {
+  width: 100%;
+}

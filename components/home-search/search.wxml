@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="home-wrapper">
+  <view class="home-content">
+     <icon class="icon-small" type="search" size="14"></icon>
+     <input 
+      class="home-content-input" 
+      placeholder="搜索歌曲" 
+      type="text" 
+      bindconfirm="bindconfirm"
+      bindinput="bindinput"></input>
+  </view>
+</view>
